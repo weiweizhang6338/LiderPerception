@@ -67,6 +67,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PCL_Release64.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -115,6 +116,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\common\bounding_box.hpp" />
+    <ClInclude Include="include\common\common.hpp" />
+    <ClInclude Include="include\common\geometry.hpp" />
+    <ClInclude Include="include\common\types\feature.hpp" />
+    <ClInclude Include="include\common\types\object.hpp" />
+    <ClInclude Include="include\common\types\type.h" />
+    <ClInclude Include="include\object_builders\base_object_builder.hpp" />
+    <ClInclude Include="include\object_builders\min_box_object_builder.hpp" />
+    <ClInclude Include="include\object_builders\object_builder_manager.hpp" />
+    <ClInclude Include="include\segmenters\base_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\don_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\euclidean_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\ground_plane_fitting_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\ground_ransac_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\region_euclidean_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\region_growing_segmenter.hpp" />
+    <ClInclude Include="include\segmenters\segmenter_manager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\object_builders\min_box_object_builder.cpp" />
+    <ClCompile Include="src\segmenters\don_segmenter.cpp" />
+    <ClCompile Include="src\segmenters\euclidean_segmenter.cpp" />
+    <ClCompile Include="src\segmenters\ground_plane_fitting_segmenter.cpp" />
+    <ClCompile Include="src\segmenters\ground_ransac_segmenter.cpp" />
+    <ClCompile Include="src\segmenters\region_euclidean_segmenter.cpp" />
+    <ClCompile Include="src\segmenters\region_growing_segmenter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

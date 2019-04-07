@@ -13,5 +13,105 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{d8c81a78-eab0-4af1-93f4-05cf3da30874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\segmenters">
+      <UniqueIdentifier>{db526d29-3018-47c4-b63c-4fcef941fc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{a43b834d-f8ad-49a4-ba07-532cadafed23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\segmenters">
+      <UniqueIdentifier>{e4538ac3-55b5-4797-a8ef-513e0cf7e7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\common\types">
+      <UniqueIdentifier>{44c49b88-87c7-4bf5-82f7-1a30a6f1f92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object_builders">
+      <UniqueIdentifier>{d3f56ba0-1ab8-4b46-9f0a-451746cee166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object_builders">
+      <UniqueIdentifier>{27418505-69c9-43a9-9263-e35f441c348f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\segmenters\base_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\don_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\euclidean_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\ground_plane_fitting_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\ground_ransac_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\region_euclidean_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\region_growing_segmenter.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\segmenters\segmenter_manager.hpp">
+      <Filter>头文件\segmenters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\types\type.h">
+      <Filter>头文件\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object_builders\base_object_builder.hpp">
+      <Filter>头文件\object_builders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object_builders\min_box_object_builder.hpp">
+      <Filter>头文件\object_builders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object_builders\object_builder_manager.hpp">
+      <Filter>头文件\object_builders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\types\object.hpp">
+      <Filter>头文件\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\types\feature.hpp">
+      <Filter>头文件\common\types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\bounding_box.hpp">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\common.hpp">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\geometry.hpp">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\segmenters\don_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmenters\euclidean_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmenters\ground_plane_fitting_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmenters\ground_ransac_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmenters\region_euclidean_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmenters\region_growing_segmenter.cpp">
+      <Filter>源文件\segmenters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object_builders\min_box_object_builder.cpp">
+      <Filter>源文件\object_builders</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
